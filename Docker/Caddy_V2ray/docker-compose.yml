@@ -2,7 +2,7 @@ version: '2'
 
 services:
   v2ray:
-    image: woaizyg/rico-free:v2ray
+    image: xixilee/v2ray:v2ray
     restart: always
     network_mode: "host"
     extra_hosts:
@@ -34,7 +34,7 @@ services:
         max-file: "3"
 
   caddy:
-    image: woaizyg/rico-free:caddy
+    image: xixilee/v2ray:caddy
     restart: always
     environment:
       - ACME_AGREE=true
