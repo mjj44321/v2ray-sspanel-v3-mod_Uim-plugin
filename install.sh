@@ -149,8 +149,8 @@ pre_install_docker_compose(){
 
     # Set V2ray backend API Listen port
     echo "Setting V2ray backend API Listen port"
-    read -p "(V2ray API Listen port(Default 2333):" v2ray_api_port
-    [ -z "${v2ray_api_port}" ] && v2ray_api_port=2333
+    read -p "(V2ray API Listen port(Default 2444):" v2ray_api_port
+    [ -z "${v2ray_api_port}" ] && v2ray_api_port=2444
     echo
     echo "---------------------------"
     echo "V2ray API Listen port = ${v2ray_api_port}"
